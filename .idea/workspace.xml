@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea554b54-58d9-434c-b840-279372aaf2d1" name="Default" comment="" />
+    <list default="true" id="ea554b54-58d9-434c-b840-279372aaf2d1" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce-gateway-nganluong-checkout/template.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/woocommerce-gateway-nganluong-checkout/woocommerce-gateway-nganluong-checkout.php" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce-gateway-nganluong-checkout/woocommerce-gateway-nganluong-checkout.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/uploads/wc-logs/nganluong-ccad7280b95663fc941694b5d83f28c3.log" afterPath="$PROJECT_DIR$/wp-content/uploads/wc-logs/nganluong-ccad7280b95663fc941694b5d83f28c3.log" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,48 +21,23 @@
       <file leaf-file-name="woocommerce-gateway-nganluong-checkout.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce-gateway-nganluong-checkout/woocommerce-gateway-nganluong-checkout.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="417" column="49" lean-forward="true" selection-start-line="417" selection-start-column="49" selection-end-line="417" selection-end-column="49" />
+            <state relative-caret-position="197">
+              <caret line="1111" column="0" lean-forward="true" selection-start-line="1111" selection-start-column="0" selection-end-line="1111" selection-end-column="0" />
               <folding>
-                <element signature="e#17802#18049#1#PHP" expanded="false" />
-                <element signature="e#18078#18380#1#PHP" expanded="false" />
-                <element signature="e#18408#18718#1#PHP" expanded="false" />
-                <element signature="e#18753#19098#1#PHP" expanded="false" />
-                <element signature="e#19133#19352#1#PHP" expanded="false" />
-                <element signature="e#19392#19723#1#PHP" expanded="false" />
-                <element signature="e#19759#20026#1#PHP" expanded="false" />
-                <element signature="e#20060#20297#1#PHP" expanded="false" />
-                <element signature="e#20334#20562#1#PHP" expanded="false" />
-                <element signature="e#20604#20737#1#PHP" expanded="false" />
-                <element signature="e#20772#20906#1#PHP" expanded="false" />
                 <element signature="n#showMessage#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
                 <element signature="n#get_pages#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
                 <element signature="n#buildCheckoutUrl#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
                 <element signature="n#buildCheckoutUrlExpand#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
-                <element signature="e#60195#60911#0#PHP" expanded="false" />
-                <element signature="n#NLCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
-                <element signature="n#IBCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
-                <element signature="n#CheckoutCall#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="class-wc-checkout.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/class-wc-checkout.php">
+      <file leaf-file-name="template.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce-gateway-nganluong-checkout/template.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22417">
-              <caret line="773" column="20" lean-forward="false" selection-start-line="773" selection-start-column="20" selection-end-line="773" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="wp-config.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-config.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1972">
-              <caret line="85" column="26" lean-forward="true" selection-start-line="85" selection-start-column="26" selection-end-line="85" selection-end-column="26" />
+            <state relative-caret-position="87">
+              <caret line="362" column="114" lean-forward="false" selection-start-line="362" selection-start-column="108" selection-end-line="362" selection-end-column="114" />
               <folding />
             </state>
           </provider>
@@ -77,12 +58,16 @@
       <dir>C:\xampp\htdocs\wordpressnlv31</dir>
     </dirStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/checkout/form-checkout.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/checkout/payment-method.php" />
         <option value="$PROJECT_DIR$/wp-config.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce-gateway-nganluong-checkout/template.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce-gateway-nganluong-checkout/woocommerce-gateway-nganluong-checkout.php" />
       </list>
     </option>
@@ -100,6 +85,7 @@
     <option name="width" value="1938" />
     <option name="height" value="1048" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -179,84 +165,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="woocommerce-gateway-nganluong-checkout" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wordpressnlv31" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wordpressnlv31" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wp-content" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="woocommerce" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wordpressnlv31" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wordpressnlv31" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wp-content" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="woocommerce" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wordpressnlv31" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wordpressnlv31" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wp-content" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="woocommerce" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="checkout" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -378,25 +286,30 @@
       <workItem from="1492652179464" duration="1267000" />
       <workItem from="1492653673238" duration="26795000" />
       <workItem from="1492698318898" duration="17946000" />
+      <workItem from="1492803347904" duration="3039000" />
+      <workItem from="1492832070449" duration="9000" />
+      <workItem from="1492832178512" duration="5518000" />
+      <workItem from="1492841146428" duration="1549000" />
+      <workItem from="1492850536162" duration="3648000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52896000" />
+    <option name="totallyTimeSpent" value="66659000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21804512" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5021645" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.4978355" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295583" sideWeight="0.4978355" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -429,25 +342,136 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#17802#18049#1#PHP" expanded="false" />
-            <element signature="e#18078#18380#1#PHP" expanded="false" />
-            <element signature="e#18408#18718#1#PHP" expanded="false" />
-            <element signature="e#18753#19098#1#PHP" expanded="false" />
-            <element signature="e#19133#19352#1#PHP" expanded="false" />
-            <element signature="e#19392#19723#1#PHP" expanded="false" />
-            <element signature="e#19759#20026#1#PHP" expanded="false" />
-            <element signature="e#20060#20297#1#PHP" expanded="false" />
-            <element signature="e#20334#20562#1#PHP" expanded="false" />
-            <element signature="e#20604#20737#1#PHP" expanded="false" />
-            <element signature="e#20772#20906#1#PHP" expanded="false" />
             <element signature="n#showMessage#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
             <element signature="n#get_pages#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
             <element signature="n#buildCheckoutUrl#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
             <element signature="n#buildCheckoutUrlExpand#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
-            <element signature="e#60195#60911#0#PHP" expanded="false" />
-            <element signature="n#NLCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
-            <element signature="n#IBCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
-            <element signature="n#CheckoutCall#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce-gateway-nganluong-checkout/template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7221">
+          <caret line="249" column="127" lean-forward="true" selection-start-line="249" selection-start-column="91" selection-end-line="249" selection-end-column="127" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce-gateway-nganluong-checkout/woocommerce-gateway-nganluong-checkout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#showMessage#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#get_pages#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#buildCheckoutUrl#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#buildCheckoutUrlExpand#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce-gateway-nganluong-checkout/template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5191">
+          <caret line="179" column="86" lean-forward="false" selection-start-line="179" selection-start-column="82" selection-end-line="179" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/class-wc-checkout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22417">
+          <caret line="773" column="20" lean-forward="false" selection-start-line="773" selection-start-column="20" selection-end-line="773" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2465">
+          <caret line="85" column="26" lean-forward="false" selection-start-line="85" selection-start-column="26" selection-end-line="85" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce-gateway-nganluong-checkout/woocommerce-gateway-nganluong-checkout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#showMessage#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#get_pages#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#buildCheckoutUrl#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#buildCheckoutUrlExpand#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce-gateway-nganluong-checkout/template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="14540" lean-forward="false" selection-start-line="0" selection-start-column="14540" selection-end-line="0" selection-end-column="14540" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/class-wc-checkout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22417">
+          <caret line="773" column="20" lean-forward="false" selection-start-line="773" selection-start-column="20" selection-end-line="773" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2465">
+          <caret line="85" column="26" lean-forward="false" selection-start-line="85" selection-start-column="26" selection-end-line="85" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce-gateway-nganluong-checkout/woocommerce-gateway-nganluong-checkout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#showMessage#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#get_pages#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#buildCheckoutUrl#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#buildCheckoutUrlExpand#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce-gateway-nganluong-checkout/template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="14540" lean-forward="true" selection-start-line="0" selection-start-column="14540" selection-end-line="0" selection-end-column="14540" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/class-wc-checkout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22417">
+          <caret line="773" column="20" lean-forward="false" selection-start-line="773" selection-start-column="20" selection-end-line="773" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1972">
+          <caret line="85" column="26" lean-forward="false" selection-start-line="85" selection-start-column="26" selection-end-line="85" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce-gateway-nganluong-checkout/woocommerce-gateway-nganluong-checkout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#showMessage#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#get_pages#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#buildCheckoutUrl#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#buildCheckoutUrlExpand#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -456,7 +480,33 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22417">
           <caret line="773" column="20" lean-forward="false" selection-start-line="773" selection-start-column="20" selection-end-line="773" selection-end-column="20" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1972">
+          <caret line="85" column="26" lean-forward="true" selection-start-line="85" selection-start-column="26" selection-end-line="85" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce-gateway-nganluong-checkout/woocommerce-gateway-nganluong-checkout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#showMessage#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#get_pages#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#buildCheckoutUrl#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#buildCheckoutUrlExpand#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/class-wc-checkout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22417">
+          <caret line="773" column="20" lean-forward="false" selection-start-line="773" selection-start-column="20" selection-end-line="773" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -464,7 +514,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2320">
           <caret line="80" column="23" lean-forward="false" selection-start-line="80" selection-start-column="23" selection-end-line="80" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -472,7 +521,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="725">
           <caret line="25" column="60" lean-forward="false" selection-start-line="25" selection-start-column="60" selection-end-line="25" selection-end-column="60" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -480,7 +528,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1334">
           <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -489,25 +536,10 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#17802#18049#1#PHP" expanded="false" />
-            <element signature="e#18078#18380#1#PHP" expanded="false" />
-            <element signature="e#18408#18718#1#PHP" expanded="false" />
-            <element signature="e#18753#19098#1#PHP" expanded="false" />
-            <element signature="e#19133#19352#1#PHP" expanded="false" />
-            <element signature="e#19392#19723#1#PHP" expanded="false" />
-            <element signature="e#19759#20026#1#PHP" expanded="false" />
-            <element signature="e#20060#20297#1#PHP" expanded="false" />
-            <element signature="e#20334#20562#1#PHP" expanded="false" />
-            <element signature="e#20604#20737#1#PHP" expanded="false" />
-            <element signature="e#20772#20906#1#PHP" expanded="false" />
             <element signature="n#showMessage#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
             <element signature="n#get_pages#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
             <element signature="n#buildCheckoutUrl#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
             <element signature="n#buildCheckoutUrlExpand#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
-            <element signature="e#60195#60911#0#PHP" expanded="false" />
-            <element signature="n#NLCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
-            <element signature="n#IBCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
-            <element signature="n#CheckoutCall#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -516,7 +548,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1189">
           <caret line="41" column="40" lean-forward="false" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -525,25 +556,10 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#17802#18049#1#PHP" expanded="false" />
-            <element signature="e#18078#18380#1#PHP" expanded="false" />
-            <element signature="e#18408#18718#1#PHP" expanded="false" />
-            <element signature="e#18753#19098#1#PHP" expanded="false" />
-            <element signature="e#19133#19352#1#PHP" expanded="false" />
-            <element signature="e#19392#19723#1#PHP" expanded="false" />
-            <element signature="e#19759#20026#1#PHP" expanded="false" />
-            <element signature="e#20060#20297#1#PHP" expanded="false" />
-            <element signature="e#20334#20562#1#PHP" expanded="false" />
-            <element signature="e#20604#20737#1#PHP" expanded="false" />
-            <element signature="e#20772#20906#1#PHP" expanded="false" />
             <element signature="n#showMessage#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
             <element signature="n#get_pages#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
             <element signature="n#buildCheckoutUrl#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
             <element signature="n#buildCheckoutUrlExpand#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
-            <element signature="e#60195#60911#0#PHP" expanded="false" />
-            <element signature="n#NLCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
-            <element signature="n#IBCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
-            <element signature="n#CheckoutCall#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -552,7 +568,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1189">
           <caret line="41" column="40" lean-forward="false" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -561,25 +576,10 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#17802#18049#1#PHP" expanded="false" />
-            <element signature="e#18078#18380#1#PHP" expanded="false" />
-            <element signature="e#18408#18718#1#PHP" expanded="false" />
-            <element signature="e#18753#19098#1#PHP" expanded="false" />
-            <element signature="e#19133#19352#1#PHP" expanded="false" />
-            <element signature="e#19392#19723#1#PHP" expanded="false" />
-            <element signature="e#19759#20026#1#PHP" expanded="false" />
-            <element signature="e#20060#20297#1#PHP" expanded="false" />
-            <element signature="e#20334#20562#1#PHP" expanded="false" />
-            <element signature="e#20604#20737#1#PHP" expanded="false" />
-            <element signature="e#20772#20906#1#PHP" expanded="false" />
             <element signature="n#showMessage#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
             <element signature="n#get_pages#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
             <element signature="n#buildCheckoutUrl#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
             <element signature="n#buildCheckoutUrlExpand#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
-            <element signature="e#60195#60911#0#PHP" expanded="false" />
-            <element signature="n#NLCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
-            <element signature="n#IBCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
-            <element signature="n#CheckoutCall#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -588,7 +588,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1189">
           <caret line="41" column="40" lean-forward="false" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -605,9 +604,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-4524">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#6#419#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -623,14 +619,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-8178">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/class-wc-checkout.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22417">
-          <caret line="773" column="20" lean-forward="false" selection-start-line="773" selection-start-column="20" selection-end-line="773" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -654,7 +642,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -662,7 +649,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1107">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -670,7 +656,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="986">
           <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -678,7 +663,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -686,42 +670,40 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="290">
           <caret line="25" column="60" lean-forward="false" selection-start-line="25" selection-start-column="60" selection-end-line="25" selection-end-column="60" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1972">
-          <caret line="85" column="26" lean-forward="true" selection-start-line="85" selection-start-column="26" selection-end-line="85" selection-end-column="26" />
+          <caret line="85" column="26" lean-forward="false" selection-start-line="85" selection-start-column="26" selection-end-line="85" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/class-wc-checkout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="773" column="20" lean-forward="false" selection-start-line="773" selection-start-column="20" selection-end-line="773" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce-gateway-nganluong-checkout/template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="362" column="114" lean-forward="false" selection-start-line="362" selection-start-column="108" selection-end-line="362" selection-end-column="114" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce-gateway-nganluong-checkout/woocommerce-gateway-nganluong-checkout.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="417" column="49" lean-forward="true" selection-start-line="417" selection-start-column="49" selection-end-line="417" selection-end-column="49" />
+        <state relative-caret-position="197">
+          <caret line="1111" column="0" lean-forward="true" selection-start-line="1111" selection-start-column="0" selection-end-line="1111" selection-end-column="0" />
           <folding>
-            <element signature="e#17802#18049#1#PHP" expanded="false" />
-            <element signature="e#18078#18380#1#PHP" expanded="false" />
-            <element signature="e#18408#18718#1#PHP" expanded="false" />
-            <element signature="e#18753#19098#1#PHP" expanded="false" />
-            <element signature="e#19133#19352#1#PHP" expanded="false" />
-            <element signature="e#19392#19723#1#PHP" expanded="false" />
-            <element signature="e#19759#20026#1#PHP" expanded="false" />
-            <element signature="e#20060#20297#1#PHP" expanded="false" />
-            <element signature="e#20334#20562#1#PHP" expanded="false" />
-            <element signature="e#20604#20737#1#PHP" expanded="false" />
-            <element signature="e#20772#20906#1#PHP" expanded="false" />
             <element signature="n#showMessage#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
             <element signature="n#get_pages#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
             <element signature="n#buildCheckoutUrl#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
             <element signature="n#buildCheckoutUrlExpand#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
-            <element signature="e#60195#60911#0#PHP" expanded="false" />
-            <element signature="n#NLCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
-            <element signature="n#IBCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
-            <element signature="n#CheckoutCall#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>

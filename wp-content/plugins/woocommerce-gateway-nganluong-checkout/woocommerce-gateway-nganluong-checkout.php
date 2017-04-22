@@ -5,7 +5,7 @@
  * Plugin URI: https://www.nganluong.vn/
  * Description: Plugin tích hợp NgânLượng.vn được build trên WooCommerce 3.x
  * Version: 3.1
- * Author: Nguyen Thanh - 0968381829
+ * Author: Đức LM(0948389111) - Thanh NA (0968381829)
  * Author URI: http://www.webckk.com/
  */
 ini_set('display_errors', true);
@@ -13,10 +13,12 @@ add_action('plugins_loaded', 'woocommerce_payment_nganluong_init', 0);
 add_action('parse_request', array('WC_Gateway_NganLuong', 'nganluong_return_handler'));
 
 define('URL_API', 'http://sandbox.nganluong.vn:8088/nl30/checkout.api.nganluong.post.php'); // Đường dẫn gọi api
-define('RECEIVER', 'demo@nganluong.vn'); // Email tài khoản ngân lượng
-define('MERCHANT_ID', '36680'); // Mã merchant kết nối
-define('MERCHANT_PASS', 'matkhauketnoi'); // Mật khẩu kết nôi
-
+//define('RECEIVER', 'demo@nganluong.vn'); // Email tài khoản ngân lượng
+//define('MERCHANT_ID', '36680'); // Mã merchant kết nối
+//define('MERCHANT_PASS', 'matkhauketnoi'); // Mật khẩu kết nôi
+define('MERCHANT_ID', '30439');
+define('MERCHANT_PASS', '212325');
+define('RECEIVER', 'nguyencamhue@gmail.com');
 
 function woocommerce_payment_nganluong_init()
 {
@@ -47,10 +49,7 @@ function woocommerce_payment_nganluong_init()
             $this->init_settings();
 
             $this->title = $this->settings['title'];
-            $payment_content = '<ul class="list-content"><li class="active"><label><input type="radio" value="NL" name="option_payment" selected="true">Thanh toán bằng Ví điện tử NgânLượng</label><div class="boxContent"><p> Thanh toán trực tuyến AN TOÀN và ĐƯỢC BẢO VỆ, sử dụng thẻ ngân hàng trong và ngoài nước hoặc nhiều hình thức tiện lợi khác. Được bảo hộ &amp; cấp phép bởi NGÂN HÀNG NHÀ NƯỚC, ví điện tử duy nhất được cộng đồng ƯA THÍCH NHẤT 2 năm liên tiếp, Bộ Thông tin Truyền thông trao giải thưởng Sao Khuê<br>Giao dịch. Đăng ký ví NgânLượng.vn miễn phí <a href="https://www.nganluong.vn/?portal=nganluong&amp;page=user_register" target="_blank">tại đây</a></p></div></li><li><label><input type="radio" value="ATM_ONLINE" name="option_payment">Thanh toán online bằng thẻ ngân hàng nội địa</label><div class="boxContent"><p><i><span style="color:#ff5a00;font-weight:bold;text-decoration:underline;">Lưu ý</span>: Bạn cần đăng ký Internet-Banking hoặc dịch vụ thanh toán trực tuyến tại ngân hàng trước khi thực hiện.</i></p><ul class="cardList clearfix"><li class="bank-online-methods "><label for="vcb_ck_on"><i class="BIDV" title="Ngân hàng TMCP Đầu tư &amp; Phát triển Việt Nam"></i><input type="radio" value="BIDV" name="bankcode"></label></li><li class="bank-online-methods "><label for="vcb_ck_on"><i class="VCB" title="Ngân hàng TMCP Ngoại Thương Việt Nam"></i><input type="radio" value="VCB" name="bankcode"></label></li><li class="bank-online-methods "><label for="vnbc_ck_on"><i class="DAB" title="Ngân hàng Đông Á"></i><input type="radio" value="DAB" name="bankcode"></label></li><li class="bank-online-methods "><label for="tcb_ck_on"><i class="TCB" title="Ngân hàng Kỹ Thương"></i><input type="radio" value="TCB" name="bankcode"></label></li><li class="bank-online-methods "><label for="sml_atm_mb_ck_on"><i class="MB" title="Ngân hàng Quân Đội"></i><input type="radio" value="MB" name="bankcode"></label></li><li class="bank-online-methods "><label for="sml_atm_vib_ck_on"><i class="VIB" title="Ngân hàng Quốc tế"></i> <input type="radio" value="VIB" name="bankcode"> </label></li> <li class="bank-online-methods "> <label for="sml_atm_vtb_ck_on"> <i class="ICB" title="Ngân hàng Công Thương Việt Nam"></i> <input type="radio" value="ICB" name="bankcode"> </label></li> <li class="bank-online-methods "> <label for="sml_atm_exb_ck_on"> <i class="EXB" title="Ngân hàng Xuất Nhập Khẩu"></i> <input type="radio" value="EXB" name="bankcode"> </label></li> <li class="bank-online-methods "> <label for="sml_atm_acb_ck_on"> <i class="ACB" title="Ngân hàng Á Châu"></i> <input type="radio" value="ACB" name="bankcode"> </label></li> <li class="bank-online-methods "> <label for="sml_atm_hdb_ck_on"> <i class="HDB" title="Ngân hàng Phát triển Nhà TPHCM"></i> <input type="radio" value="HDB" name="bankcode"> </label></li> <li class="bank-online-methods "> <label for="sml_atm_msb_ck_on"> <i class="MSB" title="Ngân hàng Hàng Hải"></i> <input type="radio" value="MSB" name="bankcode"> </label></li> <li class="bank-online-methods "> <label for="sml_atm_nvb_ck_on"> <i class="NVB" title="Ngân hàng Nam Việt"></i> <input type="radio" value="NVB" name="bankcode"> </label></li> <li class="bank-online-methods "> <label for="sml_atm_vab_ck_on"> <i class="VAB" title="Ngân hàng Việt Á"></i> <input type="radio" value="VAB" name="bankcode"> </label></li> <li class="bank-online-methods "> <label for="sml_atm_vpb_ck_on"> <i class="VPB" title="Ngân Hàng Việt Nam Thịnh Vượng"></i> <input type="radio" value="VPB" name="bankcode"> </label></li> <li class="bank-online-methods "> <label for="sml_atm_scb_ck_on"> <i class="SCB" title="Ngân hàng Sài Gòn Thương tín"></i> <input type="radio" value="SCB" name="bankcode"> </label></li> <li class="bank-online-methods "> <label for="bnt_atm_pgb_ck_on"> <i class="PGB" title="Ngân hàng Xăng dầu Petrolimex"></i> <input type="radio" value="PGB" name="bankcode"> </label></li> <li class="bank-online-methods "> <label for="bnt_atm_gpb_ck_on"> <i class="GPB" title="Ngân hàng TMCP Dầu khí Toàn Cầu"></i> <input type="radio" value="GPB" name="bankcode"> </label></li> <li class="bank-online-methods "> <label for="bnt_atm_agb_ck_on"> <i class="AGB" title="Ngân hàng Nông nghiệp &amp; Phát triển nông thôn"></i> <input type="radio" value="AGB" name="bankcode"> </label></li> <li class="bank-online-methods "> <label for="bnt_atm_sgb_ck_on"> <i class="SGB" title="Ngân hàng Sài Gòn Công Thương"></i> <input type="radio" value="SGB" name="bankcode"> </label></li> <li class="bank-online-methods "> <label for="sml_atm_bab_ck_on"> <i class="BAB" title="Ngân hàng Bắc Á"></i> <input type="radio" value="BAB" name="bankcode"> </label></li> <li class="bank-online-methods "> <label for="sml_atm_bab_ck_on"> <i class="TPB" title="Tền phong bank"></i> <input type="radio" value="TPB" name="bankcode"> </label></li> <li class="bank-online-methods "> <label for="sml_atm_bab_ck_on"> <i class="NAB" title="Ngân hàng Nam Á"></i> <input type="radio" value="NAB" name="bankcode"> </label></li> <li class="bank-online-methods "> <label for="sml_atm_bab_ck_on"> <i class="SHB" title="Ngân hàng TMCP Sài Gòn - Hà Nội (SHB)"></i> <input type="radio" value="SHB" name="bankcode"> </label></li> <li class="bank-online-methods "> <label for="sml_atm_bab_ck_on"> <i class="OJB" title="Ngân hàng TMCP Đại Dương (OceanBank)"></i> <input type="radio" value="OJB" name="bankcode"> </label></li> </ul> </div> </li> <li> <label><input type="radio" value="IB_ONLINE" name="option_payment">Thanh toán bằng IB</label> <div class="boxContent"> <p><i> <span style="color:#ff5a00;font-weight:bold;text-decoration:underline;">Lưu ý</span>: Bạn cần đăng ký Internet-Banking hoặc dịch vụ thanh toán trực tuyến tại ngân hàng trước khi thực hiện.</i></p> <ul class="cardList clearfix"> <li class="bank-online-methods "> <label for="vcb_ck_on"> <i class="BIDV" title="Ngân hàng TMCP Đầu tư &amp; Phát triển Việt Nam"></i> <input type="radio" value="BIDV" name="bankcode"> </label></li> <li class="bank-online-methods "> <label for="vcb_ck_on"> <i class="VCB" title="Ngân hàng TMCP Ngoại Thương Việt Nam"></i> <input type="radio" value="VCB" name="bankcode"> </label></li> <li class="bank-online-methods "> <label for="vnbc_ck_on"> <i class="DAB" title="Ngân hàng Đông Á"></i> <input type="radio" value="DAB" name="bankcode"> </label></li> <li class="bank-online-methods "> <label for="tcb_ck_on"> <i class="TCB" title="Ngân hàng Kỹ Thương"></i> <input type="radio" value="TCB" name="bankcode"> </label></li> </ul> </div> </li> <li> <label><input type="radio" value="ATM_OFFLINE" name="option_payment">Thanh toán atm offline</label> <div class="boxContent"> <ul class="cardList clearfix"> <li class="bank-online-methods "> <label for="vcb_ck_on"> <i class="BIDV" title="Ngân hàng TMCP Đầu tư &amp; Phát triển Việt Nam"></i> <input type="radio" value="BIDV" name="bankcode"> </label></li> <li class="bank-online-methods "> <label for="vcb_ck_on"> <i class="VCB" title="Ngân hàng TMCP Ngoại Thương Việt Nam"></i> <input type="radio" value="VCB" name="bankcode"> </label></li> <li class="bank-online-methods "> <label for="vnbc_ck_on"> <i class="DAB" title="Ngân hàng Đông Á"></i> <input type="radio" value="DAB" name="bankcode"> </label></li> <li class="bank-online-methods "> <label for="tcb_ck_on"> <i class="TCB" title="Ngân hàng Kỹ Thương"></i> <input type="radio" value="TCB" name="bankcode"> </label></li> <li class="bank-online-methods "> <label for="sml_atm_mb_ck_on"> <i class="MB" title="Ngân hàng Quân Đội"></i> <input type="radio" value="MB" name="bankcode"> </label></li> <li class="bank-online-methods "> <label for="sml_atm_vtb_ck_on"> <i class="ICB" title="Ngân hàng Công Thương Việt Nam"></i> <input type="radio" value="ICB" name="bankcode"> </label></li> <li class="bank-online-methods "> <label for="sml_atm_acb_ck_on"> <i class="ACB" title="Ngân hàng Á Châu"></i> <input type="radio" value="ACB" name="bankcode"> </label></li> <li class="bank-online-methods "> <label for="sml_atm_msb_ck_on"> <i class="MSB" title="Ngân hàng Hàng Hải"></i> <input type="radio" value="MSB" name="bankcode"> </label></li> <li class="bank-online-methods "> <label for="sml_atm_scb_ck_on"> <i class="SCB" title="Ngân hàng Sài Gòn Thương tín"></i> <input type="radio" value="SCB" name="bankcode"> </label></li> <li class="bank-online-methods "> <label for="bnt_atm_pgb_ck_on"> <i class="PGB" title="Ngân hàng Xăng dầu Petrolimex"></i> <input type="radio" value="PGB" name="bankcode"> </label></li> <li class="bank-online-methods "> <label for="bnt_atm_agb_ck_on"> <i class="AGB" title="Ngân hàng Nông nghiệp &amp; Phát triển nông thôn"></i> <input type="radio" value="AGB" name="bankcode"> </label></li> <li class="bank-online-methods "> <label for="sml_atm_bab_ck_on"> <i class="SHB" title="Ngân hàng TMCP Sài Gòn - Hà Nội (SHB)"></i> <input type="radio" value="SHB" name="bankcode"> </label></li> </ul> </div> </li> <li> <label><input type="radio" value="NH_OFFLINE" name="option_payment">Thanh toán tại văn phòng ngân hàng</label> <div class="boxContent"> <ul class="cardList clearfix"> <li class="bank-online-methods "> <label for="vcb_ck_on"> <i class="BIDV" title="Ngân hàng TMCP Đầu tư &amp; Phát triển Việt Nam"></i> <input type="radio" value="BIDV" name="bankcode"> </label></li> <li class="bank-online-methods "> <label for="vcb_ck_on"> <i class="VCB" title="Ngân hàng TMCP Ngoại Thương Việt Nam"></i> <input type="radio" value="VCB" name="bankcode"> </label></li> <li class="bank-online-methods "> <label for="vnbc_ck_on"> <i class="DAB" title="Ngân hàng Đông Á"></i> <input type="radio" value="DAB" name="bankcode"> </label></li> <li class="bank-online-methods "> <label for="tcb_ck_on"> <i class="TCB" title="Ngân hàng Kỹ Thương"></i> <input type="radio" value="TCB" name="bankcode"> </label></li> <li class="bank-online-methods "> <label for="sml_atm_mb_ck_on"> <i class="MB" title="Ngân hàng Quân Đội"></i> <input type="radio" value="MB" name="bankcode"> </label></li> <li class="bank-online-methods "> <label for="sml_atm_vib_ck_on"> <i class="VIB" title="Ngân hàng Quốc tế"></i> <input type="radio" value="VIB" name="bankcode"> </label></li> <li class="bank-online-methods "> <label for="sml_atm_vtb_ck_on"> <i class="ICB" title="Ngân hàng Công Thương Việt Nam"></i> <input type="radio" value="ICB" name="bankcode"> </label></li> <li class="bank-online-methods "> <label for="sml_atm_acb_ck_on"> <i class="ACB" title="Ngân hàng Á Châu"></i> <input type="radio" value="ACB" name="bankcode"> </label></li> <li class="bank-online-methods "> <label for="sml_atm_msb_ck_on"> <i class="MSB" title="Ngân hàng Hàng Hải"></i> <input type="radio" value="MSB" name="bankcode"> </label></li> <li class="bank-online-methods "> <label for="sml_atm_scb_ck_on"> <i class="SCB" title="Ngân hàng Sài Gòn Thương tín"></i> <input type="radio" value="SCB" name="bankcode"> </label></li> <li class="bank-online-methods "> <label for="bnt_atm_pgb_ck_on"> <i class="PGB" title="Ngân hàng Xăng dầu Petrolimex"></i> <input type="radio" value="PGB" name="bankcode"> </label></li> <li class="bank-online-methods "> <label for="bnt_atm_agb_ck_on"> <i class="AGB" title="Ngân hàng Nông nghiệp &amp; Phát triển nông thôn"></i> <input type="radio" value="AGB" name="bankcode"> </label></li> <li class="bank-online-methods "> <label for="sml_atm_bab_ck_on"> <i class="TPB" title="Tền phong bank"></i> <input type="radio" value="TPB" name="bankcode"> </label></li> </ul> </div> </li> <li> <label><input type="radio" value="VISA" name="option_payment" selected="true">Thanh toán bằng thẻ Visa hoặc MasterCard</label> <div class="boxContent"> <p><span style="color:#ff5a00;font-weight:bold;text-decoration:underline;">Lưu ý</span>:Visa hoặc MasterCard.</p> <ul class="cardList clearfix"> <li class="bank-online-methods "> <label for="vcb_ck_on"> Visa: <input type="radio" value="VISA" name="bankcode"> </label></li> <li class="bank-online-methods "> <label for="vnbc_ck_on"> Master:<input type="radio" value="MASTER" name="bankcode"> </label></li> </ul> </div> </li> <li> <label><input type="radio" value="CREDIT_CARD_PREPAID" name="option_payment" selected="true">Thanh toán bằng thẻ Visa hoặc MasterCard trả trước</label> </li> </ul>';
-            $payment_css = '<style> ul.bankList { clear: both; height: 202px; width: 636px; } ul.bankList li { list-style-position: outside; list-style-type: none; cursor: pointer; float: left; margin-right: 0; padding: 5px 2px; text-align: center; width: 90px; } .list-content li { list-style: none outside none; margin: 0 0 10px; } .list-content li .boxContent { display: none; width: 636px; border:1px solid #cccccc; padding:10px; } .list-content li.active .boxContent { display: block; } .list-content li .boxContent ul { height:280px; } i.VISA, i.MASTE, i.AMREX, i.JCB, i.VCB, i.TCB, i.MB, i.VIB, i.ICB, i.EXB, i.ACB, i.HDB, i.MSB, i.NVB, i.DAB, i.SHB, i.OJB, i.SEA, i.TPB, i.PGB, i.BIDV, i.AGB, i.SCB, i.VPB, i.VAB, i.GPB, i.SGB,i.NAB,i.BAB { width:80px; height:30px; display:block; background:url(https://www.nganluong.vn/webskins/skins/nganluong/checkout/version3/images/bank_logo.png) no-repeat;} i.MASTE { background-position:0px -31px} i.AMREX { background-position:0px -62px} i.JCB { background-position:0px -93px;} i.VCB { background-position:0px -124px;} i.TCB { background-position:0px -155px;} i.MB { background-position:0px -186px;} i.VIB { background-position:0px -217px;} i.ICB { background-position:0px -248px;} i.EXB { background-position:0px -279px;} i.ACB { background-position:0px -310px;} i.HDB { background-position:0px -341px;} i.MSB { background-position:0px -372px;} i.NVB { background-position:0px -403px;} i.DAB { background-position:0px -434px;} i.SHB { background-position:0px -465px;} i.OJB { background-position:0px -496px;} i.SEA { background-position:0px -527px;} i.TPB { background-position:0px -558px;} i.PGB { background-position:0px -589px;} i.BIDV { background-position:0px -620px;} i.AGB { background-position:0px -651px;} i.SCB { background-position:0px -682px;} i.VPB { background-position:0px -713px;} i.VAB { background-position:0px -744px;} i.GPB { background-position:0px -775px;} i.SGB { background-position:0px -806px;} i.NAB { background-position:0px -837px;} i.BAB { background-position:0px -868px;} ul.cardList li { cursor: pointer; float: left; margin-right: 0; padding: 5px 4px; text-align: center; width: 90px; } </style>';
-            $payment_js = '<script src="https://code.jquery.com/jquery-1.12.4.js" type="text/javascript" charset="utf-8"></script><script language="javascript"> $(\'input[name="option_payment"]\').bind(\'click\', function() { $(\'.list-content li\').removeClass(\'active\'); $(this).parent().parent(\'li\').addClass(\'active\'); }); </script>';
-            $this->description = $payment_css.$payment_content.$payment_js;
+            $this->description = $this->settings['description'];
             $this->nganluong_url = $this->settings['nganluong_url'];
             $this->merchant_site_code = $this->settings['merchant_site_code'];
             $this->merchant_id = $this->settings['merchant_id'];
@@ -148,6 +147,8 @@ function woocommerce_payment_nganluong_init()
         {
             if ($this->description)
                 echo wpautop(wptexturize(__($this->description, 'woocommerce')));
+                echo '<br>';
+                require_once 'template.php';
         }
 
         /**
@@ -218,7 +219,7 @@ function woocommerce_payment_nganluong_init()
             $payment_method = $_POST['option_payment'];
 //            $payment_method = $order->get_payment_method();
             $bank_code = @$_POST['bankcode'];
-            $order_code = "macode_" . time();
+            $order_code = $order_id;
             $payment_type = '';
             $discount_amount = 0;
             $tax_amount = 0;
@@ -264,11 +265,23 @@ function woocommerce_payment_nganluong_init()
 //                    echo "<pre>";var_dump($t);echo "</pre>";
 //                }
 //                die;
+//                echo "<pre>";var_dump($nl_result);echo "</pre>";exit();
                 if (!empty($nl_result) && (string)$nl_result->error_code == '00') {
                     //Cập nhât order với token  $nl_result->token để sử dụng check hoàn thành sau này
 //                    echo "<pre>";var_dump($nl_result->checkout_url);echo "</pre>";exit();
+                    $old_status = 'wc-' . $order->get_status();
                     $new_order_status = 'wc-processing';
+
+//                    $order->update_status($new_order_status . ' .Phương thức thanh toán : ' . $payment_method);
+//                    $order->add_order_note(sprintf(__('Cập nhật trạng thái từ %1$s thành %2$s.' . $note, 'woocommerce'), wc_get_order_status_name($old_status), wc_get_order_status_name($new_order_status)), 0, false);
+                    $note = 'Thanh toán trực tuyến qua Ngân Lượng.';
+
+                    $note .= ' Phương thức thanh toán : ' . $payment_method;
+                    $note .= ' . Thanh toán qua ngân hàng : ' . $nlcheckout->GetStringBankCode((string)$bank_code);
                     $order->update_status($new_order_status);
+                    $order->add_order_note(sprintf(__('Cập nhật trạng thái từ %1$s thành %2$s.' . $note, 'woocommerce'), wc_get_order_status_name($old_status), wc_get_order_status_name($new_order_status)), 0, false);
+                    $new_status = $nlcheckout->GetErrorMessage((string)$nl_result->transaction_status);
+                    self::log('Cập nhật đơn hàng ID: ' . $order_id . ' trạng thái ' . $new_status);
                     return (string)$nl_result->checkout_url;
                 } else {
                     echo $nl_result->error_message;
@@ -408,41 +421,42 @@ function woocommerce_payment_nganluong_init()
 
             // This probably could be written better
             if (isset($_REQUEST['order_id']) && !empty($_REQUEST['order_id']) && $_REQUEST['error_code'] == '00') {
-//                echo "<pre>";var_dump($_REQUEST);echo "</pre>";exit();
                 self::log($_SERVER['REMOTE_ADDR'] . json_encode(@$_REQUEST));
                 $settings = get_option('woocommerce_nganluong_settings', null);
                 $order_id = $_REQUEST['order_id'];
                 $nlcheckout = new NL_CheckOutV3(MERCHANT_ID, MERCHANT_PASS, RECEIVER, URL_API);
                 $nl_result = $nlcheckout->GetTransactionDetail($_GET['token']);
 //                echo "<pre>";var_dump($nl_result);echo "</pre>";exit();
-                $order = new WC_Order($order_id);
-
-                // Xác thực mã của chủ web với mã trả về từ nganluong.vn
-                // status tạm giữ 2 ngày nên để chế độ pending
+                if ((string)$nl_result->transaction_status == '00'){
+                    $order = new WC_Order($order_id);
+                    // phương thức
+                    // số dư ví
+                    // Xác thực mã của chủ web với mã trả về từ nganluong.vn
+                    // status tạm giữ 2 ngày nên để chế độ pending
 //                $new_order_status = $settings['status_order'];
-                // tuy nhiên ta sẽ fix cứng status này là completed
-                $new_order_status = 'wc-completed';
-                $old_status = 'wc-' . $order->get_status();
-                if ($new_order_status !== $old_status) {
-                    $note = 'Thanh toán trực tuyến qua Ngân Lượng.';
-                    if ((string)$nl_result->payment_type == 2) {
-                        $note .= ' Với hình thức thanh toán tạm giữ';
-                    } else if ((string)$nl_result->payment_type == 1) {
-                        $note .= ' Với hình thức thanh toán ngay';
+                    // tuy nhiên ta sẽ fix cứng status này là completed
+                    $new_order_status = 'wc-completed';
+                    $old_status = 'wc-' . $order->get_status();
+                    if ($new_order_status !== $old_status) {
+                        $note = 'Thanh toán trực tuyến qua Ngân Lượng.';
+                        if ((string)$nl_result->payment_type == 2) {
+                            $note .= ' Với hình thức thanh toán tạm giữ';
+                        } else if ((string)$nl_result->payment_type == 1) {
+                            $note .= ' Với hình thức thanh toán ngay';
+                        }
+                        $note .= ' .Mã thanh toán: ' . (string)$nl_result->transaction_id;
+                        $order->update_status($new_order_status);
+                        $order->add_order_note(sprintf(__('Cập nhật trạng thái từ %1$s thành %2$s.' . $note, 'woocommerce'), wc_get_order_status_name($old_status), wc_get_order_status_name($new_order_status)), 0, false);
+                        $new_status = $nlcheckout->GetErrorMessage((string)$nl_result->transaction_status);
+                        self::log('Cập nhật đơn hàng ID: ' . $order_id . ' trạng thái ' . $new_status);
                     }
-                    $note .= ' .Mã thanh toán: ' . (string)$nl_result->transaction_id;
-                    $order->update_status($new_order_status);
-                    $order->add_order_note(sprintf(__('Cập nhật trạng thái từ %1$s thành %2$s.' . $note, 'woocommerce'), wc_get_order_status_name($old_status), wc_get_order_status_name($new_order_status)), 0, false);
-                    $new_status = $nlcheckout->GetErrorMessage((string)$nl_result->transaction_status);
-                    self::log('Cập nhật đơn hàng ID: ' . (string)$nl_result->order_code . ' trạng thái ' . $new_status);
+                    // Remove cart
+                    $woocommerce->cart->empty_cart();
+                    // Empty awaiting payment session
+                    unset($_SESSION['order_awaiting_payment']);
+                    wp_redirect(get_permalink($settings['redirect_page_id']));
+                    exit;
                 }
-
-                // Remove cart
-                $woocommerce->cart->empty_cart();
-                // Empty awaiting payment session
-                unset($_SESSION['order_awaiting_payment']);
-                wp_redirect(get_permalink($settings['redirect_page_id']));
-                exit;
             }
         }
 
@@ -1055,6 +1069,38 @@ function woocommerce_payment_nganluong_init()
             return $arrCode[(string)$error_code];
         }
 
+        function GetStringBankCode($bank_code){
+            $arrCode = array(
+                'NL' => 'Hệ thống thanh toán số dư ví Ngân Lượng',
+                'BIDV' => 'Ngân hàng TMCP Đầu tư &amp; Phát triển Việt Nam',
+                'VCB' => 'Ngân hàng TMCP Ngoại Thương Việt Nam',
+                'DAB' => 'Ngân hàng Đông Á',
+                'TCB' => 'Ngân hàng Kỹ Thương',
+                'MB' => 'Ngân hàng Quân Đội',
+                'VIB' => 'Ngân hàng Quốc tế',
+                'ICB' => 'Ngân hàng Công Thương Việt Nam',
+                'EXB' => 'Ngân hàng Xuất Nhập Khẩu',
+                'ACB' => 'Ngân hàng Á Châu',
+                'HDB' => 'Ngân hàng Phát triển Nhà TPHCM',
+                'MSB' => 'Ngân hàng Hàng Hải',
+                'NVB' => 'Ngân hàng Nam Việt',
+                'VAB' => 'Ngân hàng Việt Á',
+                'VPB' => 'Ngân Hàng Việt Nam Thịnh Vượng',
+                'SCB' => 'Ngân hàng Sài Gòn Thương tín',
+                'PGB' => 'Ngân hàng Xăng dầu Petrolimex',
+                'GPB' => 'Ngân hàng TMCP Dầu khí Toàn Cầu',
+                'AGB' => 'Ngân hàng Nông nghiệp và Phát triển nông thôn',
+                'SGB' => 'Ngân hàng Sài Gòn Công Thương',
+                'BAB' => 'Ngân hàng Bắc Á',
+                'TPB' => 'Tiền phong bank',
+                'NAB' => 'Ngân hàng Nam Á',
+                'SHB' => 'Ngân hàng TMCP Sài Gòn - Hà Nội (SHB)',
+                'OJB' => 'Ngân hàng TMCP Đại Dương (OceanBank)',
+                'VISA' => 'Thẻ VISA',
+                'MASTER' => 'Thẻ MASTER'
+            );
+
+            return $arrCode[(string)$bank_code];        }
 
     }
 
