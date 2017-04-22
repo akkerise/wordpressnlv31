@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea554b54-58d9-434c-b840-279372aaf2d1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce-gateway-nganluong-checkout/template.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/woocommerce-gateway-nganluong-checkout/woocommerce-gateway-nganluong-checkout.php" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce-gateway-nganluong-checkout/woocommerce-gateway-nganluong-checkout.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/uploads/wc-logs/nganluong-ccad7280b95663fc941694b5d83f28c3.log" afterPath="$PROJECT_DIR$/wp-content/uploads/wc-logs/nganluong-ccad7280b95663fc941694b5d83f28c3.log" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,13 +17,21 @@
       <file leaf-file-name="woocommerce-gateway-nganluong-checkout.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce-gateway-nganluong-checkout/woocommerce-gateway-nganluong-checkout.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="1111" column="0" lean-forward="true" selection-start-line="1111" selection-start-column="0" selection-end-line="1111" selection-end-column="0" />
+            <state relative-caret-position="3379">
+              <caret line="1098" column="35" lean-forward="true" selection-start-line="1098" selection-start-column="35" selection-end-line="1098" selection-end-column="35" />
               <folding>
                 <element signature="n#showMessage#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
                 <element signature="n#get_pages#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
                 <element signature="n#buildCheckoutUrl#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
                 <element signature="n#buildCheckoutUrlExpand#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+                <element signature="n#BankOfflineCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+                <element signature="n#officeBankCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+                <element signature="n#TTVPCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+                <element signature="e#46960#47676#0#PHP" expanded="false" />
+                <element signature="n#NLCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+                <element signature="n#IBCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+                <element signature="n#CheckoutCall#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+                <element signature="n#GetErrorMessage#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -36,7 +40,7 @@
       <file leaf-file-name="template.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce-gateway-nganluong-checkout/template.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
+            <state relative-caret-position="10498">
               <caret line="362" column="114" lean-forward="false" selection-start-line="362" selection-start-column="108" selection-end-line="362" selection-end-column="114" />
               <folding />
             </state>
@@ -101,6 +105,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -170,7 +175,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -290,16 +294,16 @@
       <workItem from="1492832070449" duration="9000" />
       <workItem from="1492832178512" duration="5518000" />
       <workItem from="1492841146428" duration="1549000" />
-      <workItem from="1492850536162" duration="3648000" />
+      <workItem from="1492850536162" duration="4040000" />
+      <workItem from="1492889502390" duration="219000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66659000" />
+    <option name="totallyTimeSpent" value="67270000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21804512" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -332,7 +336,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -346,6 +350,43 @@
             <element signature="n#get_pages#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
             <element signature="n#buildCheckoutUrl#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
             <element signature="n#buildCheckoutUrlExpand#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#BankOfflineCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#officeBankCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#TTVPCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="e#46960#47676#0#PHP" expanded="false" />
+            <element signature="n#NLCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#IBCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#CheckoutCall#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#GetErrorMessage#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce-gateway-nganluong-checkout/template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10498">
+          <caret line="362" column="114" lean-forward="false" selection-start-line="362" selection-start-column="108" selection-end-line="362" selection-end-column="114" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce-gateway-nganluong-checkout/woocommerce-gateway-nganluong-checkout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#showMessage#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#get_pages#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#buildCheckoutUrl#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#buildCheckoutUrlExpand#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#BankOfflineCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#officeBankCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#TTVPCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="e#46960#47676#0#PHP" expanded="false" />
+            <element signature="n#NLCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#IBCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#CheckoutCall#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#GetErrorMessage#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -367,6 +408,14 @@
             <element signature="n#get_pages#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
             <element signature="n#buildCheckoutUrl#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
             <element signature="n#buildCheckoutUrlExpand#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#BankOfflineCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#officeBankCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#TTVPCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="e#46960#47676#0#PHP" expanded="false" />
+            <element signature="n#NLCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#IBCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#CheckoutCall#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#GetErrorMessage#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -402,6 +451,14 @@
             <element signature="n#get_pages#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
             <element signature="n#buildCheckoutUrl#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
             <element signature="n#buildCheckoutUrlExpand#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#BankOfflineCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#officeBankCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#TTVPCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="e#46960#47676#0#PHP" expanded="false" />
+            <element signature="n#NLCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#IBCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#CheckoutCall#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#GetErrorMessage#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -437,6 +494,14 @@
             <element signature="n#get_pages#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
             <element signature="n#buildCheckoutUrl#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
             <element signature="n#buildCheckoutUrlExpand#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#BankOfflineCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#officeBankCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#TTVPCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="e#46960#47676#0#PHP" expanded="false" />
+            <element signature="n#NLCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#IBCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#CheckoutCall#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#GetErrorMessage#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -472,6 +537,14 @@
             <element signature="n#get_pages#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
             <element signature="n#buildCheckoutUrl#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
             <element signature="n#buildCheckoutUrlExpand#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#BankOfflineCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#officeBankCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#TTVPCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="e#46960#47676#0#PHP" expanded="false" />
+            <element signature="n#NLCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#IBCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#CheckoutCall#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#GetErrorMessage#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -499,6 +572,14 @@
             <element signature="n#get_pages#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
             <element signature="n#buildCheckoutUrl#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
             <element signature="n#buildCheckoutUrlExpand#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#BankOfflineCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#officeBankCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#TTVPCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="e#46960#47676#0#PHP" expanded="false" />
+            <element signature="n#NLCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#IBCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#CheckoutCall#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#GetErrorMessage#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -540,6 +621,14 @@
             <element signature="n#get_pages#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
             <element signature="n#buildCheckoutUrl#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
             <element signature="n#buildCheckoutUrlExpand#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#BankOfflineCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#officeBankCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#TTVPCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="e#46960#47676#0#PHP" expanded="false" />
+            <element signature="n#NLCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#IBCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#CheckoutCall#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#GetErrorMessage#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -560,6 +649,14 @@
             <element signature="n#get_pages#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
             <element signature="n#buildCheckoutUrl#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
             <element signature="n#buildCheckoutUrlExpand#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#BankOfflineCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#officeBankCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#TTVPCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="e#46960#47676#0#PHP" expanded="false" />
+            <element signature="n#NLCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#IBCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#CheckoutCall#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#GetErrorMessage#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -580,6 +677,14 @@
             <element signature="n#get_pages#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
             <element signature="n#buildCheckoutUrl#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
             <element signature="n#buildCheckoutUrlExpand#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#BankOfflineCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#officeBankCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#TTVPCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="e#46960#47676#0#PHP" expanded="false" />
+            <element signature="n#NLCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#IBCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#CheckoutCall#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#GetErrorMessage#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -689,7 +794,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce-gateway-nganluong-checkout/template.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
+        <state relative-caret-position="10498">
           <caret line="362" column="114" lean-forward="false" selection-start-line="362" selection-start-column="108" selection-end-line="362" selection-end-column="114" />
           <folding />
         </state>
@@ -697,13 +802,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce-gateway-nganluong-checkout/woocommerce-gateway-nganluong-checkout.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="1111" column="0" lean-forward="true" selection-start-line="1111" selection-start-column="0" selection-end-line="1111" selection-end-column="0" />
+        <state relative-caret-position="3379">
+          <caret line="1098" column="35" lean-forward="true" selection-start-line="1098" selection-start-column="35" selection-end-line="1098" selection-end-column="35" />
           <folding>
             <element signature="n#showMessage#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
             <element signature="n#get_pages#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
             <element signature="n#buildCheckoutUrl#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
             <element signature="n#buildCheckoutUrlExpand#0;n#WC_Gateway_NganLuong#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#BankOfflineCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#officeBankCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#TTVPCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="e#46960#47676#0#PHP" expanded="false" />
+            <element signature="n#NLCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#IBCheckout#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#CheckoutCall#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
+            <element signature="n#GetErrorMessage#0;n#NL_CheckOutV3#0;n#!!block;n#woocommerce_payment_nganluong_init#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
