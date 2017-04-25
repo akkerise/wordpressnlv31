@@ -12,13 +12,13 @@ ini_set('display_errors', true);
 add_action('plugins_loaded', 'woocommerce_payment_nganluong_init', 0);
 add_action('parse_request', array('WC_Gateway_NganLuong', 'nganluong_return_handler'));
 
-define('URL_API', 'http://sandbox.nganluong.vn:8088/nl30/checkout.api.nganluong.post.php'); // Đường dẫn gọi api
+//define('URL_API', 'http://sandbox.nganluong.vn:8088/nl30/checkout.api.nganluong.post.php'); // Đường dẫn gọi api
 //define('RECEIVER', 'demo@nganluong.vn'); // Email tài khoản ngân lượng
 //define('MERCHANT_ID', '36680'); // Mã merchant kết nối
 //define('MERCHANT_PASS', 'matkhauketnoi'); // Mật khẩu kết nôi
-define('MERCHANT_ID', '30439');
-define('MERCHANT_PASS', '212325');
-define('RECEIVER', 'nguyencamhue@gmail.com');
+//define('MERCHANT_ID', '30439');
+//define('MERCHANT_PASS', '212325');
+//define('RECEIVER', 'nguyencamhue@gmail.com');
 
 function woocommerce_payment_nganluong_init()
 {
@@ -140,12 +140,12 @@ function woocommerce_payment_nganluong_init()
                     'title' => __('Secure Password', 'woocommerce'),
                     'type' => 'password'
                 ),
-                'version' => array(
-                    'title' => __('Ngân Lượng Version' ,'woocommerce'),
-                    'type' => 'select',
-                    'options' => array( 'version2' => 'Version2.0', 'version3.1' => 'version3.1'),
-//                    'label' => __('Ngân Lượng Version', 'woocommerce'),
-                )
+//                'version' => array(
+//                    'title' => __('Ngân Lượng Version' ,'woocommerce'),
+//                    'type' => 'select',
+//                    'options' => array( 'version2' => 'Version2.0', 'version3.1' => 'version3.1'),
+////                    'label' => __('Ngân Lượng Version', 'woocommerce'),
+//                )
             );
         }
 
@@ -334,20 +334,15 @@ function woocommerce_payment_nganluong_init()
 
         public static function nganluong_return_handler($order_id)
         {
-//        echo "<pre>";var_dump(1);echo "</pre>";exit();
             global $woocommerce;
-
             // This probably could be written better
             if (isset($_REQUEST['order_id']) && !empty($_REQUEST['order_id']) && $_REQUEST['error_code'] == '00') {
-//                echo "<pre>";var_dump($_REQUEST);echo "</pre>";exit();
                 self::log($_SERVER['REMOTE_ADDR'] . json_encode(@$_REQUEST));
                 $settings = get_option('woocommerce_nganluong_settings', null);
-//                echo "<pre>";var_dump($settings);echo "</pre>";exit();
                 $order_id = $_REQUEST['order_id'];
-//                echo "<pre>";var_dump($settings);echo "</pre>";exit();
                 $nlcheckout = new NL_CheckOutV3($settings['merchant_site_code'],$settings['secure_pass'],$settings['merchant_id'], $settings['nganluong_url']);
+//                echo "<pre>";var_dump($settings);echo "</pre>";exit();
                 $nl_result = $nlcheckout->GetTransactionDetail($_GET['token']);
-//                echo "<pre>";var_dump($nl_result);echo "</pre>";exit();
                 if ((string)$nl_result->transaction_status == '00'){
                     $order = new WC_Order($order_id);
                     // phương thức
