@@ -37,6 +37,9 @@ function woocommerce_payment_nganluong_init()
         // Debug parameters
         private $debug_params;
         private $debug_md5;
+        private $merchant_id;
+
+        private $nlcheckout_copy;
 
         function __construct()
         {
@@ -137,6 +140,12 @@ function woocommerce_payment_nganluong_init()
                     'title' => __('Secure Password', 'woocommerce'),
                     'type' => 'password'
                 ),
+                'version' => array(
+                    'title' => __('Ngân Lượng Version' ,'woocommerce'),
+                    'type' => 'select',
+                    'options' => array( 'version2' => 'Version2.0', 'version3.1' => 'version3.1'),
+//                    'label' => __('Ngân Lượng Version', 'woocommerce'),
+                )
             );
         }
 
@@ -232,10 +241,9 @@ function woocommerce_payment_nganluong_init()
             $buyer_email = $order->get_billing_email();
             $buyer_mobile = $order->get_billing_phone();
             $buyer_address = $order->get_formatted_billing_address();
-
+//            echo "<pre>";echo $this->nganluong_url;echo "</pre>";exit();
 //            $checkouturl = $this->buildCheckoutUrlExpand($return_url, $receiver, $transaction_info, $order_id, $price, $currency, $quantity = 1, $tax, $discount, $fee_cal = 0, $fee_shipping, $order_description);
-            $nlcheckout = new NL_CheckOutV3(MERCHANT_ID, MERCHANT_PASS, RECEIVER, URL_API);
-
+            $nlcheckout = new NL_CheckOutV3($this->merchant_site_code, $this->secure_pass, $this->merchant_id, $this->nganluong_url);
             if ($payment_method != '' && $buyer_email != "" && $buyer_mobile != "" && $buyer_fullname != "" && filter_var($buyer_email, FILTER_VALIDATE_EMAIL)) {
                 $nl_result = '';
                 if ($payment_method == "VISA") {
@@ -322,109 +330,22 @@ function woocommerce_payment_nganluong_init()
             return $page_list;
         }
 
-        public
-        function buildCheckoutUrl($return_url, $receiver, $transaction_info, $order_code, $price)
-        {
-            // This is from the class provided by Ngan Luong. Not advisable to mess.
-            // This one is for simple checkout
-            // Mảng các tham số chuyển tới nganluong.vn
-            $arr_param = array(
-                'merchant_site_code' => strval($this->merchant_site_code),
-                'return_url' => strtolower(urlencode($return_url)),
-                'receiver' => strval($receiver),
-                'transaction_info' => strval($transaction_info),
-                'order_code' => strval($order_code),
-                'price' => strval($price)
-            );
-            $secure_code = '';
-            $secure_code = implode(' ', $arr_param) . ' ' . $this->secure_pass;
-            $this->debug_params = $secure_code;
-            $arr_param['secure_code'] = md5($secure_code);
-            $this->debug_md5 = $arr_param['secure_code'];
-
-            /* Bước 2. Kiểm tra  biến $redirect_url xem có '?' không, nếu không có thì bổ sung vào */
-            $redirect_url = $this->nganluong_url;
-            if (strpos($redirect_url, '?') === false) {
-                $redirect_url .= '?';
-            } else if (substr($redirect_url, strlen($redirect_url) - 1, 1) != '?' && strpos($redirect_url, '&') === false) {
-                // Nếu biến $redirect_url có '?' nhưng không kết thúc bằng '?' và có chứa dấu '&' thì bổ sung vào cuối
-                $redirect_url .= '&';
-            }
-
-            /* Bước 3. tạo url */
-            $url = '';
-            foreach ($arr_param as $key => $value) {
-                if ($url == '')
-                    $url .= $key . '=' . $value;
-                else
-                    $url .= '&' . $key . '=' . $value;
-            }
-
-            return $redirect_url . $url;
-        }
-
-        public function buildCheckoutUrlExpand($return_url, $receiver, $transaction_info, $order_code, $price, $currency = 'vnd', $quantity = 1, $tax = 0, $discount = 0, $fee_cal = 0, $fee_shipping = 0, $order_description = '', $buyer_info = '', $affiliate_code = '')
-        {
-            // This is from the class provided by Ngan Luong. Not advisable to mess.
-            //  This one is for advanced checkout, including taxes and discounts
-            if ($affiliate_code == "")
-                $affiliate_code = $this->affiliate_code;
-            $arr_param = array(
-                'merchant_site_code' => strval($this->merchant_site_code),
-                'return_url' => strval(strtolower($return_url)),
-                'receiver' => strval($receiver),
-                'transaction_info' => strval($transaction_info),
-                'order_code' => strval($order_code),
-                'price' => strval($price),
-                'currency' => strval($currency),
-                'quantity' => strval($quantity),
-                'tax' => strval($tax),
-                'discount' => strval($discount),
-                'fee_cal' => strval($fee_cal),
-                'fee_shipping' => strval($fee_shipping),
-                'order_description' => strval($order_description),
-                'buyer_info' => strval($buyer_info),
-                'affiliate_code' => strval($affiliate_code)
-            );
-            $secure_code = '';
-            $secure_code = implode(' ', $arr_param) . ' ' . $this->secure_pass;
-            $arr_param['secure_code'] = md5($secure_code);
-            /* */
-            $redirect_url = $this->nganluong_url;
-            if (strpos($redirect_url, '?') === false) {
-                $redirect_url .= '?';
-            } else if (substr($redirect_url, strlen($redirect_url) - 1, 1) != '?' && strpos($redirect_url, '&') === false) {
-                $redirect_url .= '&';
-            }
-
-            /* */
-            $url = '';
-            foreach ($arr_param as $key => $value) {
-                $value = urlencode($value);
-                if ($url == '') {
-                    $url .= $key . '=' . $value;
-                } else {
-                    $url .= '&' . $key . '=' . $value;
-                }
-            }
-
-            return $redirect_url . $url;
-        }
-
         /* Hàm thực hiện xác minh tính đúng đắn của các tham số trả về từ nganluong.vn */
 
         public static function nganluong_return_handler($order_id)
         {
-
+//        echo "<pre>";var_dump(1);echo "</pre>";exit();
             global $woocommerce;
-            global $wpdb;
 
             // This probably could be written better
             if (isset($_REQUEST['order_id']) && !empty($_REQUEST['order_id']) && $_REQUEST['error_code'] == '00') {
+//                echo "<pre>";var_dump($_REQUEST);echo "</pre>";exit();
                 self::log($_SERVER['REMOTE_ADDR'] . json_encode(@$_REQUEST));
                 $settings = get_option('woocommerce_nganluong_settings', null);
+//                echo "<pre>";var_dump($settings);echo "</pre>";exit();
                 $order_id = $_REQUEST['order_id'];
-                $nlcheckout = new NL_CheckOutV3(MERCHANT_ID, MERCHANT_PASS, RECEIVER, URL_API);
+//                echo "<pre>";var_dump($settings);echo "</pre>";exit();
+                $nlcheckout = new NL_CheckOutV3($settings['merchant_site_code'],$settings['secure_pass'],$settings['merchant_id'], $settings['nganluong_url']);
                 $nl_result = $nlcheckout->GetTransactionDetail($_GET['token']);
 //                echo "<pre>";var_dump($nl_result);echo "</pre>";exit();
                 if ((string)$nl_result->transaction_status == '00'){
