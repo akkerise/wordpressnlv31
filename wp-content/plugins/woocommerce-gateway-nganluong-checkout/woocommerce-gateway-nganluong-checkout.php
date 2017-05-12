@@ -380,7 +380,7 @@ function woocommerce_payment_nganluong_init()
                     // status tạm giữ 2 ngày nên để chế độ pending
 //                    $new_order_status = $settings['status_order'];
                     // tuy nhiên ta sẽ fix cứng status này là completed
-                     $new_order_status = 'wc-processing';
+                    $new_order_status = 'wc-processing';
                     $old_status = 'wc-' . $order->get_status();
                     if ($new_order_status !== $old_status) {
                         $note = 'Thanh toán trực tuyến qua Ngân Lượng.';
@@ -1081,9 +1081,7 @@ function woocommerce_payment_nganluong_init()
                 'IB_ONLINE' => 'Thanh toán bằng internet banking'
             );
             return $arrCode[(string)$payment_method];
-    }
-
-
+        }
 
 
     }
