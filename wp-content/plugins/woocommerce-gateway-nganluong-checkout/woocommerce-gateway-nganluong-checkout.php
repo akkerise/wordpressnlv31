@@ -38,11 +38,8 @@ function woocommerce_payment_nganluong_init()
         private $debug_params;
         private $debug_md5;
         private $merchant_id;
-
         private $nlcheckout_copy;
-
         private $status_order;
-
         function __construct()
         {
             $this->icon = @$this->settings['icon']; // Icon URL
@@ -60,18 +57,14 @@ function woocommerce_payment_nganluong_init()
             $this->merchant_id = $this->settings['merchant_id'];
             $this->secure_pass = $this->settings['secure_pass'];
             $this->redirect_page_id = $this->settings['redirect_page_id'];
-
             $this->status_order = $this->settings['status_order'];
-
             $this->debug = @$this->settings['debug'];
             $this->order_button_text = __('Proceed to Ngân Lượng', 'woocommerce');
-
             $this->msg['message'] = "";
             $this->msg['class'] = "";
             // Add the page after checkout to redirect to Ngan Luong
             add_action('woocommerce_receipt_NganLuong', array($this, 'receipt_page'));
             add_action('woocommerce_update_options_payment_gateways_' . $this->id, array($this, 'process_admin_options'));
-
             // add_action('woocommerce_thankyou_NganLuongVN', array($this, 'thankyou_page'));
         }
 
@@ -197,9 +190,7 @@ function woocommerce_payment_nganluong_init()
             $receiver = $this->merchant_id;
             $currency = $this->settings['nlcurrency'];
             $transaction_info = ''; // urlencode("Order#".$order_id." | ".$_SERVER['SERVER_NAME']);
-
             $order_description = $order_id;
-
             $order_quantity = $order->get_item_count();
             //$discount = $order->get_cart_discount();
             $discount = 0;
@@ -214,8 +205,6 @@ function woocommerce_payment_nganluong_init()
 
             $price = $order->get_total() - ($tax + $fee_shipping);
             $total_amount = $price;
-
-
             // 
             // if (!empty($array_items)) {
             //     $array_items[0] = [
@@ -227,8 +216,7 @@ function woocommerce_payment_nganluong_init()
             // } else {
             //     $array_items = [];
             // }
-            // 
-
+            //
             $array_items = [
                 'item_name' => $order->get_order_item_totals(),
                 'item_quantity' => $order->get_order_item_totals(),
@@ -326,8 +314,6 @@ function woocommerce_payment_nganluong_init()
             } else {
                 echo "<h3> Bạn chưa nhập đủ thông tin khách hàng </h3>";
             }
-
-
         }
 
         function showMessage($content)
@@ -380,7 +366,7 @@ function woocommerce_payment_nganluong_init()
                     // status tạm giữ 2 ngày nên để chế độ pending
 //                    $new_order_status = $settings['status_order'];
                     // tuy nhiên ta sẽ fix cứng status này là completed
-                     $new_order_status = 'wc-processing';
+                    $new_order_status = 'wc-processing';
                     $old_status = 'wc-' . $order->get_status();
                     if ($new_order_status !== $old_status) {
                         $note = 'Thanh toán trực tuyến qua Ngân Lượng.';
@@ -414,7 +400,6 @@ function woocommerce_payment_nganluong_init()
         public $merchant_password = '';
         public $receiver_email = '';
         public $cur_code = 'vnd';
-
 
         function __construct($merchant_id, $merchant_password, $receiver_email, $url_api)
         {
@@ -1081,9 +1066,7 @@ function woocommerce_payment_nganluong_init()
                 'IB_ONLINE' => 'Thanh toán bằng internet banking'
             );
             return $arrCode[(string)$payment_method];
-    }
-
-
+        }
 
 
     }

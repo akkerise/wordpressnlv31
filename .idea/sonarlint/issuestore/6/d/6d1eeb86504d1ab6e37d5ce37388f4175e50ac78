@@ -1,0 +1,129 @@
+
+3	php:S2068" Remove this hard-coded password.(ú›ì£
+íphp:S104"ÖFile "woocommerce-gateway-nganluong-checkout.php" has 1085 lines, which is greater than 1000 authorized. Split it into smaller files.
+Qphp:S105"EReplace all tab characters in this file by sequences of white-spaces.
+_php:S107"HThis function has 15 parameters, which is greater than the 7 authorized.(ÆóÑÑ˝ˇˇˇˇ
+Yphp:S107"HThis function has 15 parameters, which is greater than the 7 authorized.(†˝⁄	
+_php:S107"HThis function has 15 parameters, which is greater than the 7 authorized.(ı∏ÊÕ˙ˇˇˇˇ
+_php:S107"HThis function has 15 parameters, which is greater than the 7 authorized.(¯Ó”Ô˘ˇˇˇˇ
+Zphp:S107"HThis function has 15 parameters, which is greater than the 7 authorized.(Æÿß
+Zphp:S107"HThis function has 15 parameters, which is greater than the 7 authorized.(Ö„çå
+_php:S107"HThis function has 14 parameters, which is greater than the 7 authorized.(¡¢ˇ∂ˇˇˇˇˇ
+Zphp:S107"HThis function has 15 parameters, which is greater than the 7 authorized.(ΩìÏÛ
+jphp:S101"XRename class "WC_Gateway_NganLuong" to match the regular expression ^[A-Z][a-zA-Z0-9]*$.(—éÔÇ
+hphp:S101"QRename class "NL_CheckOutV3" to match the regular expression ^[A-Z][a-zA-Z0-9]*$.(À®·É˘ˇˇˇˇ
+D	php:S1068"1Remove this unused "$debug_params" private field.(§¿∂’
+A	php:S1068".Remove this unused "$debug_md5" private field.(õ¥–Ñ
+F	php:S1068"4Remove this unused "$nlcheckout_copy" private field.(˛’ËY
+r	php:S1067"ZReduce the number of conditional operators (4) used in the expression (maximum allowed 3).(˘˙¶˙˙ˇˇˇˇ
+h	php:S3776"URefactor this function to reduce its Cognitive Complexity from 232 to the 15 allowed.(®ÖÈù
+]	php:S1192"JDefine a constant instead of duplicating this literal "IB_ONLINE" 3 times.(˙›Ÿã
+`	php:S1192"HDefine a constant instead of duplicating this literal "version" 9 times.(˜›Õ£ˇˇˇˇˇ
+a	php:S1192"IDefine a constant instead of duplicating this literal "order_id" 3 times.(∂≈√⁄ˇˇˇˇˇ
+`	php:S1192"HDefine a constant instead of duplicating this literal "default" 5 times.(Àó £˝ˇˇˇˇ
+l	php:S1192"TDefine a constant instead of duplicating this literal "CREDIT_CARD_PREPAID" 3 times.(îìôÛ¸ˇˇˇˇ
+c	php:S1192"KDefine a constant instead of duplicating this literal "return_url" 8 times.(ñÊ∂”˛ˇˇˇˇ
+k	php:S1192"SDefine a constant instead of duplicating this literal "SetExpressCheckout" 7 times.(∞Å’ı˙ˇˇˇˇ
+^	php:S1192"KDefine a constant instead of duplicating this literal "tax_amount" 8 times.(œÑ®é
+h	php:S1192"PDefine a constant instead of duplicating this literal "discount_amount" 8 times.(ºÎΩ∫˙ˇˇˇˇ
+^	php:S1192"KDefine a constant instead of duplicating this literal "NH_OFFLINE" 3 times.(ï£ôè
+e	php:S1192"MDefine a constant instead of duplicating this literal "buyer_mobile" 8 times.(≈àî»˙ˇˇˇˇ
+e	php:S1192"MDefine a constant instead of duplicating this literal "total_amount" 8 times.(¯îÌ—˛ˇˇˇˇ
+^	php:S1192"KDefine a constant instead of duplicating this literal "cancel_url" 8 times.(‰‚õ†
+^	php:S1192"KDefine a constant instead of duplicating this literal "total_item" 8 times.(° ïõ
+`	php:S1192"MDefine a constant instead of duplicating this literal "description" 10 times.(‡ä¸Î
+`	php:S1192"MDefine a constant instead of duplicating this literal "merchant_id" 12 times.(ı“ùß
+Z	php:S1192"GDefine a constant instead of duplicating this literal "title" 13 times.(®êÒ›
+`	php:S1192"MDefine a constant instead of duplicating this literal "fee_shipping" 8 times.(Æﬁ√™
+g	php:S1192"ODefine a constant instead of duplicating this literal "receiver_email" 8 times.(íΩÑàˇˇˇˇˇ
+i	php:S1192"QDefine a constant instead of duplicating this literal "redirect_page_id" 3 times.(ú∑êú¯ˇˇˇˇ
+^	php:S1192"KDefine a constant instead of duplicating this literal "order_code" 8 times.(¯‰ƒ›
+_	php:S1192"LDefine a constant instead of duplicating this literal "ATM_OFFLINE" 3 times.(¸ô§·
+k	php:S1192"SDefine a constant instead of duplicating this literal "merchant_site_code" 3 times.(·¸∂˘ˇˇˇˇ
+^	php:S1192"KDefine a constant instead of duplicating this literal "ATM_ONLINE" 4 times.(ØÚº≥
+b	php:S1192"JDefine a constant instead of duplicating this literal "bank_code" 7 times.(Å”„ï¯ˇˇˇˇ
+f	php:S1192"NDefine a constant instead of duplicating this literal "buyer_address" 8 times.(¢ªıô˝ˇˇˇˇ
+j	php:S1192"RDefine a constant instead of duplicating this literal "merchant_password" 9 times.(¬ Ÿ¡˙ˇˇˇˇ
+a	php:S1192"IDefine a constant instead of duplicating this literal "function" 9 times.(ïÌ¿•˝ˇˇˇˇ
+`	php:S1192"MDefine a constant instead of duplicating this literal "woocommerce" 24 times.(›¿‡¿
+a	php:S1192"ODefine a constant instead of duplicating this literal "payment_method" 8 times.(÷¥ês
+_	php:S1192"LDefine a constant instead of duplicating this literal "buyer_email" 8 times.(©Ëáì
+f	php:S1192"NDefine a constant instead of duplicating this literal "nganluong_url" 3 times.(˘Ì∑˛˚ˇˇˇˇ
+e	php:S1192"MDefine a constant instead of duplicating this literal "payment_type" 8 times.(ûÖ÷À˝ˇˇˇˇ
+a	php:S1192"IDefine a constant instead of duplicating this literal "cur_code" 8 times.(ç¸¬÷¸ˇˇˇˇ
+_	php:S1192"LDefine a constant instead of duplicating this literal "secure_pass" 3 times.(„ÿ“ﬁ
+e	php:S1192"RDefine a constant instead of duplicating this literal "order_description" 8 times.(éÊáª
+g	php:S1192"ODefine a constant instead of duplicating this literal "buyer_fullname" 8 times.(ö∂≥˙˚ˇˇˇˇ
+1php:S125"Remove this commented out code.(ﬁœπˇ
+1php:S125"Remove this commented out code.(øﬁÔË
+6php:S125"Remove this commented out code.(˙Î¶¸ˇˇˇˇ
+6php:S125"Remove this commented out code.(å‰‹§¯ˇˇˇˇ
+0php:S125"Remove this commented out code.(ÙπûR
+6php:S125"Remove this commented out code.(Öõÿ„ˇˇˇˇˇ
+1php:S125"Remove this commented out code.(ŸÁ €
+6php:S125"Remove this commented out code.(ÇÔ“û˚ˇˇˇˇ
+1php:S125"Remove this commented out code.(∫∑ﬁ∫
+6php:S125"Remove this commented out code.(”ä®Ö˛ˇˇˇˇ
+6php:S125"Remove this commented out code.(—˘¿Ûˇˇˇˇˇ
+1php:S125"Remove this commented out code.(ØòåÍ
+6php:S125"Remove this commented out code.(ºñÇ¥¯ˇˇˇˇ
+1php:S125"Remove this commented out code.(Ë˙¢ﬁ
+1php:S125"Remove this commented out code.(Ú¬Ë£
+1php:S125"Remove this commented out code.(Ωä€
+6php:S125"Remove this commented out code.(í≈ªﬁ¸ˇˇˇˇ
+1php:S125"Remove this commented out code.(ÑÕÀ…
+6php:S125"Remove this commented out code.(ÛˆÑ±˚ˇˇˇˇ
+1php:S125"Remove this commented out code.(ÚŸ©ƒ
+0php:S125"Remove this commented out code.(◊óÂH
+1php:S125"Remove this commented out code.(Ωä€
+6php:S125"Remove this commented out code.(–ÙÙñ˚ˇˇˇˇ
+6php:S125"Remove this commented out code.(œØ›€˛ˇˇˇˇ
+6php:S125"Remove this commented out code.(º¸¡°˙ˇˇˇˇ
+6php:S125"Remove this commented out code.(·∞ı≠˘ˇˇˇˇ
+6php:S125"Remove this commented out code.(º¸¡°˙ˇˇˇˇ
+6php:S125"Remove this commented out code.(ßÅÜˆ˝ˇˇˇˇ
+6php:S125"Remove this commented out code.(ßÅÜˆ˝ˇˇˇˇ
+6php:S125"Remove this commented out code.(ßÅÜˆ˝ˇˇˇˇ
+6php:S125"Remove this commented out code.(º¸¡°˙ˇˇˇˇ
+6php:S125"Remove this commented out code.(º¸¡°˙ˇˇˇˇ
+nphp:S122"\2 statements were found on this line. Reformat the code to have only one statement per line.(ŒÁÏ∂
+nphp:S122"\2 statements were found on this line. Reformat the code to have only one statement per line.(ŒÁÏ∂
+nphp:S122"\2 statements were found on this line. Reformat the code to have only one statement per line.(ŒÁÏ∂
+nphp:S122"\2 statements were found on this line. Reformat the code to have only one statement per line.(ŒÁÏ∂
+nphp:S122"\2 statements were found on this line. Reformat the code to have only one statement per line.(ŒÁÏ∂
+nphp:S122"\2 statements were found on this line. Reformat the code to have only one statement per line.(ŒÁÏ∂
+nphp:S122"\2 statements were found on this line. Reformat the code to have only one statement per line.(ŒÁÏ∂
+nphp:S122"\2 statements were found on this line. Reformat the code to have only one statement per line.(ŒÁÏ∂
+Bphp:S121"0Add curly braces around the nested statement(s).(ŒÆºñ
+Gphp:S121"0Add curly braces around the nested statement(s).(´â”˜˚ˇˇˇˇ
+Bphp:S121"0Add curly braces around the nested statement(s).(˝ò‡ë
+Bphp:S121"0Add curly braces around the nested statement(s).(ŒÁÏ∂
+Bphp:S121"0Add curly braces around the nested statement(s).(ŒÁÏ∂
+Bphp:S121"0Add curly braces around the nested statement(s).(ŒÁÏ∂
+Aphp:S121"0Add curly braces around the nested statement(s).(ùá¯A
+Bphp:S121"0Add curly braces around the nested statement(s).(ŒÁÏ∂
+Bphp:S121"0Add curly braces around the nested statement(s).(ŒÁÏ∂
+Bphp:S121"0Add curly braces around the nested statement(s).(ŒÁÏ∂
+Bphp:S121"0Add curly braces around the nested statement(s).(ŒÁÏ∂
+Bphp:S121"0Add curly braces around the nested statement(s).(ŒÁÏ∂
+Aphp:S121"0Add curly braces around the nested statement(s).(ùá¯A
+z	php:S1488"bImmediately return this expression instead of assigning it to the temporary variable "$nl_result".(ëó≠‰˝ˇˇˇˇ
+u	php:S1488"bImmediately return this expression instead of assigning it to the temporary variable "$nl_result".(ÂûæΩ
+u	php:S1488"bImmediately return this expression instead of assigning it to the temporary variable "$nl_result".(ÂûæΩ
+u	php:S1488"bImmediately return this expression instead of assigning it to the temporary variable "$nl_result".(ÂûæΩ
+u	php:S1488"bImmediately return this expression instead of assigning it to the temporary variable "$nl_result".(ÂûæΩ
+u	php:S1488"bImmediately return this expression instead of assigning it to the temporary variable "$nl_result".(ÂûæΩ
+u	php:S1488"bImmediately return this expression instead of assigning it to the temporary variable "$nl_result".(ÂûæΩ
+u	php:S1488"bImmediately return this expression instead of assigning it to the temporary variable "$nl_result".(ÂûæΩ
+u	php:S1488"bImmediately return this expression instead of assigning it to the temporary variable "$nl_result".(ÂûæΩ
+I	php:S1481"1Remove this unused "$woocommerce" local variable.(¸èÌ‰˛ˇˇˇˇ
+F	php:S1481".Remove this unused "$receiver" local variable.(ìåÏπ˙ˇˇˇˇ
+F	php:S1481".Remove this unused "$currency" local variable.(Ä∫Ê©˚ˇˇˇˇ
+H	php:S1481"6Remove this unused "$transaction_info" local variable.(ÙπûR
+F	php:S1481"4Remove this unused "$order_quantity" local variable.(ê¶Ê`
+A	php:S1481".Remove this unused "$discount" local variable.(äÙ»á
+@	php:S1481".Remove this unused "$settings" local variable.(£Î◊(
+H	php:S1481"0Remove this unused "$old_status" local variable.(Æ∞¿£ˇˇˇˇˇ
+C	php:S1481"+Remove this unused "$error" local variable.(ÿÑˆÇ¯ˇˇˇˇ
+>	php:S1481"+Remove this unused "$order" local variable.(Í‡¨ò
+¶php:S138"ìThis function "woocommerce_payment_nganluong_init" has 1059 lines, which is greater than the 150 lines authorized. Split it into smaller functions.(®ÖÈù

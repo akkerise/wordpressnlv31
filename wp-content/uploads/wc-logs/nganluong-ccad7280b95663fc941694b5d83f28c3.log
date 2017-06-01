@@ -234,3 +234,9 @@
 04-27-2017 @ 06:36:32 - http://sandbox.nganluong.vn:8088/nl30/checkout/version31/index/token_code/36388-ab8a7d6c799dbdb7cb59ed0bdff58e19
 04-27-2017 @ 06:38:08 - ::1{"order_id":"149","error_code":"00","token":"36388-ab8a7d6c799dbdb7cb59ed0bdff58e19"}
 04-27-2017 @ 06:38:12 - Cập nhật đơn hàng ID: 149 trạng thái Thành công
+05-02-2017 @ 18:54:37 - Cập nhật đơn hàng ID: 150 trạng thái 
+05-02-2017 @ 18:54:37 - http://sandbox.nganluong.vn:8088/nl30/checkout/version31/index/token_code/36581-90cb4ca8c4d1c5ebb98eea4c1856450a
+05-02-2017 @ 18:55:59 - ::1{"order_id":"150","error_code":"00","token":"36581-90cb4ca8c4d1c5ebb98eea4c1856450a"}
+05-02-2017 @ 18:56:06 - Cập nhật đơn hàng ID: 150 trạng thái Thành công
+05-30-2017 @ 20:05:29 - Cập nhật đơn hàng ID: 152 trạng thái 
+05-30-2017 @ 20:05:29 - http://sandbox.nganluong.vn:8088/nl30/checkout/version31/index/token_code/38186-1dce61ec49559ddc8c56a1c4dcf688bf
